@@ -1,0 +1,19 @@
+openapi: 3.0.1
+info:
+  title: Example to show generation of the response schema
+  version: "1.0"
+paths:
+  /test:
+    get:
+      description: "This is a test"
+      parameters: []
+      responses:
+        "200":
+          description: OK
+          content:
+            "application/json":
+              examples:
+                foo:
+                  value:
+                    foo: 123
+                    bar: "baz"
